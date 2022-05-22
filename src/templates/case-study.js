@@ -8,7 +8,6 @@ import Flex from '@common/Flex';
 import IFrame from '@common/IFrame';
 import Button, { IconButton } from '@common/Button';
 
-import { ProjectLinks } from '@components/Projects/ProjectTemplate.style';
 import SocialShareSection from '@components/Blog/SocialShareSection';
 import SplitLayout from '@components/common/SplitLayout';
 
@@ -39,16 +38,6 @@ const CaseStudy = ({ data }) => {
         <Flex className="case__title" justify="space-between" align="center">
           <h1>{study.title}</h1>
 
-          <ProjectLinks className="case__links">
-            <Button target="__blank" as="a" href={study.demo}>
-              Live Demo
-            </Button>
-            <IconButton
-              label="github"
-              icon={['fab', 'github']}
-              href={study.src}
-            />
-          </ProjectLinks>
         </Flex>
 
         <section className="case__info">

@@ -19,38 +19,42 @@ const About = () => {
           <Avatar src="hfest_avatar_2.jpg" />
         </div>
         <p>
-          Hi, I'm Anurag Hazra, a self-taught passionate FrontEnd developer from
-          India, currently working at{' '}
-          <a className="about__link" href="https://razorpay.com">
-            Razorpay
+          Hi, I'm Tobias Pitters, a physicist turned Data Scientist/Data Engineer from Stuttgart, Germany.
+          I'm currently working as a freelancer, which I genuinely enjoy.
+        <br />
+        <br />I also love doing <b>open source</b> development, I committed to fantastic libraries
+          in the Python and Rust ecosystem, such as the amazing dataframe libraries
+          {' '}
+          <a className="about__link" href="https://pandas.pydata.org/">
+            Pandas
           </a>{' '}
-          as a FrontEnd engineer. I've been building stuff on the web since when
-          I was in 6th standard, I've made countless side projects and I also
-          posses magical powers of using react to build delightful user
-          interfaces.
-          <br />
-          <br />I also love doing <b>open source</b> development, I actively
-          maintain various notable open source projects with over, <br />
-          <b>30k+ stars on GitHub</b> and <b>50m+ hits</b>. It gives me a
-          wonderful feeling of achievement and joy which I cannot explain in
-          words.
+          and 
+          {' '}
+          <a className="about__link" href="https://github.com/pola-rs/polars">
+            Polars
+          </a>{' '}.
         </p>
       </AboutInfo>
 
       <Flex justify="space-between" className="quotes__wrapper">
         <Quote>
-          <p>“Simplicity is the baddest choice to be the best.“</p>
+          <p>“Perfect is the enemy of good.“</p>
+          <br />
+          <i>- Voltaire</i>
         </Quote>
         <Quote>
           <p>
-            “I know I’m not successful enough, but I’m passionate enough not to
-            worry about success.“
+            “You’re unlikely to discover something new without a lot of practice on old stuff, but further, you should get a heck of a lot of fun out of working out funny relations and interesting things.”
           </p>
+          <br />
+          <i>- Richard Feynman</i>
         </Quote>
         <Quote>
           <p>
-            “Creativity is the driver of an unstoppable train called Passion.”
+            “We cannot solve our problems with the same thinking we used when we created them.“
           </p>
+          <br />
+          <i>- Albert Einstein</i>
         </Quote>
       </Flex>
     </AboutWrapper>

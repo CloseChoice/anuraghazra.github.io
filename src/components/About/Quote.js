@@ -34,8 +34,6 @@ const QuoteWrapper = styled.article`
 const Quote = ({ children }) => (
   <QuoteWrapper>
     {children}
-    <br />
-    <i>- anurag hazra</i>
   </QuoteWrapper>
 );
 

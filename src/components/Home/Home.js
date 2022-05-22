@@ -58,8 +58,8 @@ const Home = () => {
         {/* <Parallax y={[50, -50]} className="home__text"> */}
         <div className="home__text">
           <p>Hello, I’m</p>
-          <h1>ANURAG HAZRA</h1>
-          <p className="adjust">CREATIVE FRONT-END WEB DEVELOPER</p>
+          <h1>TOBIAS PITTERS</h1>
+          <p className="adjust">doing machine learning and data science</p>
 
           <div className="home__CTA">
             <Button className="cta" as="a" href="#">
@@ -70,23 +70,12 @@ const Home = () => {
               <IconLink
                 label="github"
                 icon={['fab', 'github']}
-                href="//github.com/anuraghazra"
-              />
-              <IconLink
-                label="twitter"
-                icon={['fab', 'twitter']}
-                href="//twitter.com/anuraghazru"
-              />
-              <IconLink
-                label="codepen"
-                icon={['fab', 'codepen']}
-                href="//codepen.io/anuraghazra"
+                href="//github.com/CloseChoice"
               />
             </div>
           </div>
         </div>
         {/* </Parallax> */}
-        <HeroCard />
       </Intro>
 
       {/* Things I LOVE */}
