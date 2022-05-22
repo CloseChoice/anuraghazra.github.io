@@ -16,11 +16,13 @@ const About = () => {
       <SkewBg />
       <AboutInfo>
         <div>
-          <Avatar src="hfest_avatar_2.jpg" />
+          <Avatar src="tobias_pitters.jpg" />
         </div>
         <p>
           Hi, I'm Tobias Pitters, a physicist turned Data Scientist/Data Engineer from Stuttgart, Germany.
           I'm currently working as a freelancer, which I genuinely enjoy.
+          I spend most of my time building data pipelines with state of the art tech, and really like to conceptualize and built them. 
+
         <br />
         <br />I also love doing <b>open source</b> development, I committed to fantastic libraries
           in the Python and Rust ecosystem, such as the amazing dataframe libraries
