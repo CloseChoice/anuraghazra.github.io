@@ -1,11 +1,11 @@
 const meta = {
   // Metadata
-  siteTitle: 'Anurag Hazra - Creative Web Designer',
+  siteTitle: 'Tobias Pitters - Data Engineer',
   siteDescription:
-    'Anurag Hazra - Creative frontEnd web developer who loves javascript and modern web technologies.',
-  siteTitleAlt: 'Anurag Hazra',
-  siteShortName: 'Anurag Hazra',
-  siteUrl: 'https://anuraghazra.github.io', // No trailing slash!
+    'Tobias Pitters - building reliable data pipelines and generating lasting insights',
+  siteTitleAlt: 'Tobias Pitters',
+  siteShortName: 'Tobias Pitters',
+  siteUrl: 'https://tobiaspitters.github.io', // No trailing slash!
 };
 
 const social = {
@@ -17,8 +17,7 @@ const social = {
 const website = {
   ...meta,
   ...social,
-  disqusShortName: 'anuraghazra',
-  googleAnalyticsID: 'UA-119972196-1',
+  disqusShortName: 'tobiaspitters',
   // Manifest
   themeColor: '#6D83F2',
   backgroundColor: '#6D83F2',

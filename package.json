@@ -1,13 +1,13 @@
 {
   "name": "anurag-hazra",
   "private": true,
-  "description": "Anurag Hazra Portfolio Site",
+  "description": "Tobias Pitters Portfolio Site",
   "version": "0.1.0",
-  "author": "Anurag Hazra <hazru.anurag@gmail.com>",
+  "author": "Tobias Pitters <tobias.pittesr@gmx.de>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "babel-plugin-styled-components": "^1.10.7",
     "disqus-react": "^1.0.7",

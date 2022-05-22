@@ -1,8 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import svgRect from '@src/static/home_rect.svg';
+import { faBrain } from '@fortawesome/free-solid-svg-icons'
 
-import { HeroCard } from './HeroCard';
+import {
+  faPython,
+  faOsi
+//  faRust,
+//  faLinkedin
+} from '@fortawesome/free-brands-svg-icons';
 import { HomeWrapper, Intro } from './Home.style';
 
 import IconLink from '@common/IconLink';
@@ -16,34 +22,35 @@ const ThingsILove = () => (
   <Flex justify="space-between" align="center">
     <Card>
       <CardIcon>
-        <FontAwesomeIcon icon="code" />
+        <FontAwesomeIcon icon={faBrain} />
       </CardIcon>
-      <CardTitle>FrontEnd</CardTitle>
+      <CardTitle>Artifical Intelligence</CardTitle>
       <CardText>
-        I'm more front end focused and love to work with Reactjs as well as pure
-        HTML, CSS.
+        I like putting together algorithms to solve real world problems. 
+        AI can be a game changer when used in the right circumstances.
       </CardText>
     </Card>
 
     <Card>
       <CardIcon>
-        <FontAwesomeIcon icon={['fab', 'js']} />
+        <FontAwesomeIcon icon={faPython} />
       </CardIcon>
-      <CardTitle>Javascript</CardTitle>
+      <CardTitle>Python</CardTitle>
       <CardText>
-        I just extremely love javascript, I can’t even express how much I love
-        javascript with just a few lines.
+        I love the flexibility and speed when developing in Python. The ecosystem is
+        overwhelming.
       </CardText>
     </Card>
 
     <Card>
       <CardIcon>
-        <FontAwesomeIcon icon="paint-brush" />
+        <FontAwesomeIcon icon={faOsi} />
       </CardIcon>
-      <CardTitle>Creative Coding</CardTitle>
+      <CardTitle>Open Source Software</CardTitle>
       <CardText>
-        I love creative coding because I do both coding & designing. making
-        beautiful art with code is very satisfying to me.
+        I love both using and developing open source software. 
+        I truely believe that this makes the ecosystem healthier and better when
+        access to critical software is democratized.
       </CardText>
     </Card>
   </Flex>
@@ -71,6 +78,11 @@ const Home = () => {
                 label="github"
                 icon={['fab', 'github']}
                 href="//github.com/CloseChoice"
+              />
+              <IconLink
+                label="github"
+                icon={['fab', 'linkedin']}
+                href="//linkedin.com/in/tobias-pitters-770667199/"
               />
             </div>
           </div>

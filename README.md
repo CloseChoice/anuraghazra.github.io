@@ -1,7 +1,7 @@
 <p align="center">
-  <a href="https://anuraghazra.github.io/">
+  <a href="https://tobiaspitters.github.io/">
     <img alt="Gatsby" src="./src/static/logo_noalpha.svg" width="100" />
-    <h2 align="center">Anurag Hazra</h2>
+    <h2 align="center">Tobias Pitters</h2>
   </a>
 </p> 
 <p align="center">Creative FrontEnd Web Developer</p>
@@ -11,7 +11,7 @@
 ![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Fanuraghazra.github.io)
 
 
-![Anurag Hazra Site Preview](./src/static/screenshot.png)
+![Tobias Pitters Site Preview](./src/static/screenshot.png)
 
 Strained eyes? There's DarkMode too :p
 

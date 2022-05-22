@@ -13,6 +13,7 @@ import {
   faCodepen,
   faReact,
   faNode,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faPaintBrush,
@@ -56,6 +57,7 @@ library.add(
   faTimes,
   faMoon,
   faSun,
-  faEdit
+  faEdit,
+  faLinkedin
 );
 config.autoAddCss = false;
