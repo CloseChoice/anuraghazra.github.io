@@ -129,13 +129,6 @@ module.exports = {
         showSpinner: false,
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
-      },
-    },
     // others
     {
       resolve: 'gatsby-plugin-robots-txt',
