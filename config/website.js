@@ -9,7 +9,7 @@ const meta = {
 };
 
 const social = {
-  siteLogo: `src/static/logo.svg`,
+  siteLogo: `src/static/test.svg`,
   siteBanner: `${meta.siteUrl}/images/social-banner.png`,
   twitter: '@anuraghazru',
 };
