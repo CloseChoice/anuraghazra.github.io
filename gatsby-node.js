@@ -129,71 +129,71 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.sourceNodes = ({
-  actions,
-  createNodeId,
-  createContentDigest,
-  store,
-  cache,
-}) => {
-  const { createNode } = actions;
-  const CC_PROJECTS_URI = 'https://anuraghazra.github.io/CanvasFun/data.json';
-
-  const createCreativeCodingNode = (project, i) => {
-    const node = {
-      id: createNodeId(`${i}`),
-      parent: null,
-      children: [],
-      internal: {
-        type: `CreativeCoding`,
-        content: JSON.stringify(project),
-        contentDigest: createContentDigest(project),
-      },
-      ...project,
-    };
-
-    // create `allCreativeCoding` Node
-    createNode(node);
-  };
-
-  // GET IMAGE THUMBNAILS
-  const createRemoteImage = async (project, i) => {
-    try {
-      // it will download the remote files
-      await createRemoteFileNode({
-        id: `${i}`,
-        url: project.img, // the image url
-        store,
-        cache,
-        createNode,
-        createNodeId,
-      });
-    } catch (error) {
-      throw new Error('error creating remote img node - ' + error);
-    }
-  };
-
-  // promise based sourcing
-  return axios
-    .get(CC_PROJECTS_URI)
-    .then(res => {
-      res.data.forEach((project, i) => {
-        createCreativeCodingNode(project, i);
-        createRemoteImage(project, i);
-      });
-    })
-    .catch(err => {
-      // just create a dummy node to pass the build if faild to fetch data
-      createCreativeCodingNode(
-        {
-          id: '0',
-          demo: '',
-          img: '',
-          title: 'Error while loading Data',
-          src: '',
-        },
-        0
-      );
-      throw new Error(err);
-    });
-};
+// exports.sourceNodes = ({
+//   actions,
+//   createNodeId,
+//   createContentDigest,
+//   store,
+//   cache,
+// }) => {
+//   const { createNode } = actions;
+//   const CC_PROJECTS_URI = 'https://anuraghazra.github.io/CanvasFun/data.json';
+// 
+//   const createCreativeCodingNode = (project, i) => {
+//     const node = {
+//       id: createNodeId(`${i}`),
+//       parent: null,
+//       children: [],
+//       internal: {
+//         type: `CreativeCoding`,
+//         content: JSON.stringify(project),
+//         contentDigest: createContentDigest(project),
+//       },
+//       ...project,
+//     };
+// 
+//     // create `allCreativeCoding` Node
+//     createNode(node);
+//   };
+// 
+//   // GET IMAGE THUMBNAILS
+//   const createRemoteImage = async (project, i) => {
+//     try {
+//       // it will download the remote files
+//       await createRemoteFileNode({
+//         id: `${i}`,
+//         url: project.img, // the image url
+//         store,
+//         cache,
+//         createNode,
+//         createNodeId,
+//       });
+//     } catch (error) {
+//       throw new Error('error creating remote img node - ' + error);
+//     }
+//   };
+// 
+//   // promise based sourcing
+//   return axios
+//     .get(CC_PROJECTS_URI)
+//     .then(res => {
+//       res.data.forEach((project, i) => {
+//         createCreativeCodingNode(project, i);
+//         createRemoteImage(project, i);
+//       });
+//     })
+//     .catch(err => {
+//       // just create a dummy node to pass the build if faild to fetch data
+//       createCreativeCodingNode(
+//         {
+//           id: '0',
+//           demo: '',
+//           img: '',
+//           title: 'Error while loading Data',
+//           src: '',
+//         },
+//         0
+//       );
+//       throw new Error(err);
+//     });
+// };
